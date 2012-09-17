@@ -1,0 +1,413 @@
+/* Z-index Guide :
+=======================
+	backimg ==> .img = -2;
+	noise	 		 = -1;
+	header , footer  = +1;
+
+*/
+div,ul {
+	border : none !important;
+}
+
+html { 
+    height: 100%;
+	overflow-y: scroll; 
+}
+
+body {
+    height: 100%;
+}
+
+.ie6.container {
+    height: 100%;
+}
+
+div.container {
+    min-height: 100%;
+	position: relative;
+}
+
+div.img {
+	position : fixed;
+	top  : 0;
+	left : 0;
+	bottom : 0;
+	right : 0;
+	background-position : left top ;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index : -2;
+	transition: background 1.2s ease-in-out;
+	-webkit-transition: background 1.2s ease-in-out;
+	-moz-transition	  : background 1.2s ease-in-out;
+	-o-transition	  : background 1.2s ease-in-out;
+	-ms-transition	  : background 1.2s ease-in-out;
+	
+}
+
+div.noise {
+	position : fixed;
+	top  	: 0;
+	left 	: 0;
+	bottom : 0;
+	right 	: 0;
+	background-position : left top ;
+	background-repeat: repeat;
+	background-image : url("image/picefct.png");
+	z-index : -1;
+}
+
+header,footer {
+	position : fixed;
+	left  	: 0;	
+    width  	: 100%;
+	z-index : +1;
+}
+
+header {
+	height 	: 35px;
+	background-color : rgba(0,0,0,0.7);
+	padding-top : 5px;
+	padding-left : 180px; 
+	top		: 0;
+}
+
+div.content	{
+	padding : 100px 20px;
+	width : 950px;
+	margin: 0 auto;
+	height: 100%;
+	border : 2px dashed blue; 
+}
+
+div.badboy {
+	height: 0;
+	width: 0;
+	min-height: 0;
+	min-width: 0;
+	clear: both;
+}
+
+.floor2,
+.floor3,
+.floor4 {
+	border: 2px dashed #bbb;
+	
+}
+
+div.contact {
+	float : left;
+	padding-top : 5px;
+	height:20px;
+	width: 320px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+div.contact li {
+	margin-left: 5px;
+	float: left;
+	background-image:url('image/icon.png');
+	background-repeat: no-repeat;
+	height: 20px;
+	width : 20px;
+}
+
+div.contact li p {
+	color: white;
+	margin-top: 2px;
+	font-family: "Times New Roman";
+	font-weight : bold;
+}
+
+div.contact li:first-child {
+	background-image:none;
+	margin-left: 0;
+	width: 180px;
+	font-size: 14px;
+	text-align: center;
+	background-color: #000;
+	display: block;
+}
+
+div.contact li.twitter {
+	background-position: 0 0;
+}
+
+div.contact li.google {
+	background-position: -20px 0;
+}
+
+div.contact li.flicker {
+	background-position: -40px 0;
+}
+
+div.contact li.facebook {
+	background-position: -60px 0;
+}
+
+div.contact a {
+	height: inherit;
+	width : inherit;
+	display: block;
+}
+
+div.floor2 {
+	padding-top : 10px;
+	height: 100px;
+}
+
+nav {
+	float : right;
+	background-color: rgba(20,20,20,0.8);
+}
+
+nav div.logo {
+	float: right;
+	width : 85px;
+	height: 85px;
+	background-color: #900;
+	background-image:url('image/plane.png');
+	background-repeat: no-repeat;
+}
+
+div.title {
+	float: right;
+	width : 85px;
+	height: 85px;
+	background-color: #900;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "Lucida Sans Typewriter";
+	text-align: center;
+}
+
+div.title h1 {
+	margin-top: 27px;
+}
+
+nav menu {
+	list-style-type: none;
+	margin-right: 170px;
+}
+
+nav menu li {
+	height: 85px;
+	float : right;
+	background-color: rgba(0,0,0,0.2);
+	margin-left: 1px;
+}
+
+nav menu li:hover {
+	background-color: #333;
+}
+
+menu li a {
+	text-decoration: none;
+	padding: 30px 40px;
+	color : #eee;
+	font-size: 20px;
+	font-family: arial;
+	display: block;
+}
+
+div.next,div.back {
+	position : absolute;
+	top : 300px;
+	background-color : #900; 
+}
+
+div.next {
+	right : 0;
+} 
+
+div.back {
+	left : 0;
+}
+
+div.back a,div.next a{
+	color : #000;
+	font-weight : bold;
+	cursor : pointer;
+	font-size : 20px;
+	display : block;
+	padding : 10px 10px; 
+	text-decoration : none;
+} 
+div.back:hover,div.next:hover {
+	box-shadow: 0 0 10px 5px #333;
+}
+
+div.back a:hover,div.next a:hover{
+	color : yellow;
+}
+
+div.floor3 {
+	height: 200px;
+	padding-top : 40px;
+}
+
+div.activity {
+	padding-top: 1px;
+	float : left;
+	height: 190px;
+	width : 430px;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	border-radius: 10px;
+}
+
+
+/*----------zed loos---------*/
+
+article.actvityarticle {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+div.activityimage {
+	float: right;
+	width: 120px;
+	height: 120px;
+	margin: 25px 20px 0px 0px;
+	/*border: 3px solid white;*/
+	background-image:url('image/active.png');
+}
+
+div.activitytext {
+	margin:18px 160px 0px 20px;
+	/*border: 3px solid white;*/
+	/*width: 100px;*/
+	height: 120px;
+	text-align: right;
+}
+
+div.activitytext h2 {
+	font-size: 20px;
+	font-family: Tahoma;
+	font-weight: bold;
+}
+
+div.activitytext p {
+	font-size: 15px;
+	font-family: Tahoma;
+	text-align: justify;
+	line-height: 23px;
+}
+
+footer {
+	bottom	: 0;
+	height 	: 150px;
+}
+
+div.btns {
+	width : 425px;
+	border: 2px dashed red;
+	height: 100px;
+	margin: 0 auto;
+}
+
+div.btns li {
+	float:left;
+	height: 66px;
+	width: 66px;
+	margin-left :5px;
+	/*border: 1px solid white;*/
+	border-radius: 33px;
+	background-image:url('image/btns.png');
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+div.btns li:hover {
+	box-shadow: 0 0 10px 5px #333;
+}
+
+div.btns li:first-child {
+	margin-left :0;
+}
+
+div.btns li.pic0 {
+	background-position: 0 0;
+}
+
+div.btns li.pic1 {
+	background-position: -66px 0;
+}
+
+div.btns li.pic2 {
+	background-position: -132px 0;
+}
+
+div.btns li.pic3 {
+	background-position: -198px 0;
+}
+
+div.btns li.pic4 {
+	background-position: -264px 0;
+}
+
+div.btns li.pic5 {
+	background-position: -330px 0;
+}
+
+footer div.ctr {
+	padding-top : 10px;
+	width : 100%;
+	height : 50px;
+	background-color : rgba(0,0,0,0.7);
+	}
+footer div.ctr ul {
+	width  : 100px;
+	height : 23px;
+	margin : 0 auto;
+	border : 1px solid red;
+}
+
+footer div.ctr ul li {
+	float : left;
+	width : 22px;
+	height: 23px;
+	background-repeat	: no-repeat;
+	background-size 	: cover;
+	margin-left 		: 20px;
+	cursor: pointer;
+}
+
+footer div.ctr ul li:hover {
+	background-position-y : -22px;
+}
+
+footer div.ctr ul li:hover { /* for another browsers */
+	background-position : 0 -22px;
+}
+
+li#play {
+	background-image : url('image/play.png');
+}
+
+li#stop {
+	background-image : url('image/stop.png');
+}
+
+div.copyright {
+	background-color : #000;
+	position : fixed;
+	bottom : 0;
+	left  	: 100px;
+	z-index : +2;
+	height : 50px;
+}
+
+div.copyright a {
+	display : block;
+	padding : 20px 10px 0;
+	text-decoration : none;
+	text-transform  : capitalize;
+	color: white;
+	font-family: "Times New Roman";
+	font-weight : bold;
+	font-size : 12px;
+}
