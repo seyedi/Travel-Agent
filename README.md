@@ -1,4 +1,6 @@
 ##Travel-agency website
+
+this website is designed for a travel agent.
 ============================
 
 ##Buliding technologies
@@ -7,13 +9,15 @@
 * CSS
 * CSS 3
 * Javascript
+  
 ============================
 ##The Team
 
-* Designer:**mojtaba seyedi**
+* Designer: **Seyed Mojtaba Seyedi**
 
-* Designer:**alireza karimi**
+* Designer: **Alireza Karimi**
+  
 ============================
-design idea :
+##Design Idea
 
 http://www.imaginemthemes.com/themes/?theme=RSW
