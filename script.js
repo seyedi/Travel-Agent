@@ -25,6 +25,18 @@ window.onload=function(){
 	prvSlide = function(){
 		go2slide(currentSlide-1);
 	}
+
+	var visible = true;
+	hideKeys = function(){
+		if(visible){
+			document.getElementById("btn").style.visibility = "hidden";
+			visible = false;
+		}
+		else{
+			document.getElementById("btn").style.visibility = "visible";
+			visible = true;		
+		}	
+	}
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 	var autoPlayIv = false;
 	(autoPlayStart = document.getElementById("play").onclick = function(){
@@ -37,8 +49,11 @@ window.onload=function(){
 		autoPlayIv = false;
 	}
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 	document.getElementById("nex").onclick = nextSlide;
 	document.getElementById("bac").onclick = prvSlide;
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+	document.getElementById("hid").onclick = hideKeys;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 	for (var i=0; i<lists.length; i++) {
 		(function(j){

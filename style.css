@@ -5,9 +5,11 @@
 	header , footer  = +1;
 
 */
+
 div,ul {
 	border : none !important;
 }
+
 
 html { 
     height: 100%;
@@ -309,6 +311,15 @@ div.btns {
 	margin: 0 auto;
 }
 
+#btn {
+	transition: visibility 0s 0.5s, opacity 0.5s linear;
+	-webkit-transition: visibility 0s 0.5s, opacity 0.5s linear;
+	-moz-transition: visibility 0s 0.5s, opacity 0.5s linear;
+	-o-transition: visibility 0s 0.5s, opacity 0.5s linear;
+	-ms-transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
+
 div.btns li {
 	float:left;
 	height: 66px;
@@ -360,7 +371,7 @@ footer div.ctr {
 	background-color : rgba(0,0,0,0.7);
 	}
 footer div.ctr ul {
-	width  : 100px;
+	width  : 150px;
 	height : 23px;
 	margin : 0 auto;
 	border : 1px solid red;
@@ -371,7 +382,6 @@ footer div.ctr ul li {
 	width : 22px;
 	height: 23px;
 	background-repeat	: no-repeat;
-	background-size 	: cover;
 	margin-left 		: 20px;
 	cursor: pointer;
 }
@@ -392,6 +402,19 @@ li#stop {
 	background-image : url('image/stop.png');
 }
 
+li#hid {
+	width : 21px;
+	height : 21px;
+	background-image : url('image/hid.png');
+	background-repeat : repeat;
+	margin-top : 2px;
+	opacity : 0.4;
+}
+
+li#hid:hover {
+		background-position : 0 0;
+		opacity : 0.8;
+}
 div.copyright {
 	background-color : #000;
 	position : fixed;
