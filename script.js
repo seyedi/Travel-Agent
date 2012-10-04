@@ -1,4 +1,8 @@
 window.onload=function(){
+	document.body.className = '';
+		setTimeout(function(){
+			document.getElementById('loading').style.display='none';
+		},1500)
 	var slideshow = document.getElementById("bg");
 	var bgimages = ["image/bg/1.jpg","image/bg/2.jpg","image/bg/3.jpg","image/bg/4.jpg","image/bg/5.jpg","image/bg/6.jpg"];
 	var	lists = document.getElementById("key").getElementsByTagName('li');

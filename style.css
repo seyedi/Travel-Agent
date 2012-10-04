@@ -6,6 +6,46 @@
 
 */
 
+/* Initialization
+-------------------------------------------------- */
+#loading *{
+	opacity				: 0.4;
+	-webkit-transition	: all 1s;
+}
+
+body.preload #loading * {
+	opacity		: 0.7;
+}
+
+#loading div.backimg{
+	position		: fixed;
+	left 			: 0;
+	right 			: 0;
+	top 			: 0;
+	bottom 			: 0;
+	background-color: black;
+	z-index			: 1001;
+	background-image: url('image/loading.gif');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#loading div.txt{
+	text-align  : center;
+	position 	: fixed;
+	z-index		: 1002;
+	left 		: 0;
+	right 		: 0;
+	top 		: 0;
+	width 		: 180px;
+	height 		: 65px;
+	margin 		: 250px auto;
+	font-size 	: 30px;
+	color 		: black;
+}
+
+/**************************************/
+
 div,ul {
 	border : none !important;
 }
