@@ -45,7 +45,7 @@ window.onload=function(){
 	var autoPlayIv = false;
 	(autoPlayStart = document.getElementById("play").onclick = function(){
 		if(autoPlayIv) return;
-		autoPlayIv = setInterval(nextSlide, 5000);
+		autoPlayIv = setInterval(nextSlide, 10000);
 	})(); // run auto play
 
 	autoPlayStop = document.getElementById("stop").onclick = function(){

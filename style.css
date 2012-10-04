@@ -370,6 +370,10 @@ div.btns li {
 	background-image:url('image/btns.png');
 	background-repeat: no-repeat;
 	cursor: pointer;
+	-webkit-box-shadow: inset 0px 0px 0px 2px #FFF;
+	-moz-box-shadow: inset 0px 0px 0px 2px #FFF;
+	-o-box-shadow: inset 0px 0px 0px 2px #FFF;
+	-ms-box-shadow: inset 0px 0px 0px 2px #FFF;
 }
 
 div.btns li:hover {
